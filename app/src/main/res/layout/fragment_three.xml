@@ -1,0 +1,274 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_default_app_bg"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_input_bg1"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/lable_mdensity"
+                android:layout_width="@dimen/TD_lable_width"
+                android:layout_height="@dimen/dip_lable_height"
+                android:layout_marginEnd="8dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="Tanker Density"
+                android:textColor="@color/color_primary_text"
+                android:textSize="@dimen/dip_lable_text_size"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <EditText
+                android:id="@+id/in_m_density"
+                android:layout_width="@dimen/TD_view_width"
+                android:layout_height="@dimen/dip_view_height"
+                android:background="@color/color_default_app_bg"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:paddingLeft="5dp"
+                android:textColor="@color/input_color"
+                android:textSize="@dimen/dip_edit_text_size"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/color_input_bg1"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/lable_mtemp"
+                android:layout_width="@dimen/TD_lable_width"
+                android:layout_height="@dimen/dip_lable_height"
+                android:layout_marginEnd="8dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="Tanker Temp"
+                android:textColor="@color/color_primary_text"
+                android:textSize="@dimen/dip_lable_text_size"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <EditText
+                android:id="@+id/in_m_temp"
+                android:layout_width="@dimen/TD_view_width"
+                android:layout_height="@dimen/dip_view_height"
+                android:background="@color/color_default_app_bg"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:maxLength="4"
+                android:paddingLeft="5dp"
+                android:textColor="@color/input_color"
+                android:textSize="@dimen/dip_edit_text_size"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/color_input_bg1"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/lable_indensity"
+                android:layout_width="@dimen/TD_lable_width"
+                android:layout_height="@dimen/dip_lable_height"
+                android:layout_marginEnd="8dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="Invoice Density"
+                android:textColor="@color/color_primary_text"
+                android:textSize="@dimen/dip_lable_text_size"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <EditText
+                android:id="@+id/in_in_density"
+                android:layout_width="@dimen/TD_view_width"
+                android:layout_height="@dimen/dip_view_height"
+                android:background="@color/color_default_app_bg"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:paddingLeft="5dp"
+                android:textColor="@color/input_color"
+                android:textSize="@dimen/dip_edit_text_size"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/color_input_bg1"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/m_density_15"
+                android:layout_width="@dimen/TD_lable_width"
+                android:layout_height="@dimen/dip_lable_height"
+                android:layout_marginEnd="8dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="Density @ 15 \u2103"
+                android:textColor="@color/color_primary_text"
+                android:textSize="@dimen/dip_lable_text_size"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="16dp" />
+
+
+            <TextView
+                android:id="@+id/out_density"
+                android:layout_width="@dimen/TD_view_width"
+                android:layout_height="@dimen/dip_view_height"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:background="@color/color_default_app_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text=""
+                android:textColor="@color/dip_result_text"
+                android:textSize="@dimen/dip_view_text_size"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteY="16dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/color_input_bg1"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/density_var"
+                android:layout_width="@dimen/TD_lable_width"
+                android:layout_height="@dimen/dip_lable_height"
+                android:layout_marginEnd="8dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="Variation"
+                android:textColor="@color/color_primary_text"
+                android:textSize="@dimen/dip_lable_text_size"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="16dp" />
+
+
+            <TextView
+                android:id="@+id/out_variation"
+                android:layout_width="@dimen/TD_view_width"
+                android:layout_height="@dimen/dip_view_height"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:background="@color/color_default_app_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text=""
+                android:textColor="@color/dip_result_text"
+                android:textSize="@dimen/dip_view_text_size"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteY="16dp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="textCapWords"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#2dd00c"
+            android:textIsSelectable="false"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/calcBtn3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+        <Button
+            android:id="@+id/calcBtn3"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@android:color/holo_green_dark"
+            android:singleLine="false"
+            android:text="Calculate"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+
+        <TextView
+            android:id="@+id/errorText31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/calcBtn3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/calcBtn3"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="* Values are as per ASTM 53B Table"
+            android:textColor="#ffffff00"
+            android:textIsSelectable="false"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calcBtn3" />
+
+
+    </LinearLayout>
+</ScrollView>

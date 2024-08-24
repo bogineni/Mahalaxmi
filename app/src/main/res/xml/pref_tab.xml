@@ -1,0 +1,31 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--SwitchPreference
+        android:clickable="false"
+        android:checked ="true"
+        android:defaultValue="true"
+        android:key="pref_switch1"
+        android:summary="@string/pref_switch1_summary"
+        android:title="@string/pref_switch1_title" / -->
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="pref_switch2"
+        android:summary="@string/pref_switch2_summary"
+        android:title="@string/pref_switch2_title" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="pref_switch3"
+        android:summary="@string/pref_switch3_summary"
+        android:title="@string/pref_switch3_title" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="pref_switch4"
+        android:summary="@string/pref_switch4_summary"
+        android:title="@string/pref_switch4_title" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="pref_switch5"
+        android:summary="@string/pref_switch5_summary"
+        android:title="@string/pref_switch5_title" />
+
+</PreferenceScreen>

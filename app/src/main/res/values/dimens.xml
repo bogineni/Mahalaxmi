@@ -1,0 +1,40 @@
+<resources>
+    <!-- Default screen margins, as per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">5dp</dimen>
+
+    <dimen name="bill_text_size">20dp</dimen>
+
+    <dimen name="row_border_height">2dp</dimen>
+
+
+    <!--fragment one-->
+    <dimen name="dip_lable_text_size">20sp</dimen>
+    <dimen name="dip_edit_text_size">25sp</dimen>
+    <dimen name="dip_view_text_size">25sp</dimen>
+    <dimen name="dip_lable_width">125dp</dimen>
+    <dimen name="dip_view_width">150dp</dimen>
+    <dimen name="dip_lable_height">50sp</dimen>
+    <dimen name="dip_view_height">50sp</dimen>
+
+
+    <!--For Denom fragment -->
+    <dimen name="Denom_col_width">70dp</dimen>
+    <dimen name="notes_col_width">100dp</dimen>
+    <dimen name="value_col_width">160dp</dimen>
+    <dimen name="denom_row_height">35dp</dimen>
+
+    <!--For T-D fragment -->
+    <dimen name="TD_lable_width">155dp</dimen>
+    <dimen name="TD_view_width">135dp</dimen>
+
+    <!--For BILL fragment -->
+    <dimen name="bill_lable_width">105dp</dimen>
+    <dimen name="bill_view_width">185dp</dimen>
+    <dimen name="bill_radio_button">85dp</dimen>
+
+
+
+    </resources>

@@ -1,0 +1,280 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_default_app_bg"
+    android:fillViewport="true"
+    android:theme="@style/Base.ThemeOverlay.AppCompat.ActionBar">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_input_bg1"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_span="2"
+                android:checkedButton="@+id/radioButton1"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="@dimen/bill_radio_button"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_blue_dark"
+                    android:text="HSD"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold|italic" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="@dimen/bill_radio_button"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="MS"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold|italic" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/sendMessage"
+                android:drawableLeft="@android:drawable/ic_menu_send"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/contentView"
+                android:layout_alignRight="@+id/contentView"
+                android:layout_column="1"
+                android:layout_gravity="fill_vertical"
+                android:alpha="0.8"
+                android:background="@android:color/holo_orange_dark"
+                android:clickable="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingBottom="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="2dp"
+                android:text="SMS"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="@dimen/bill_text_size"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_input_bg1"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/lableBillNo"
+                android:layout_width="@dimen/bill_lable_width"
+                android:layout_height="@dimen/dip_lable_height"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="Bill No"
+                android:textColor="@color/color_primary_text"
+                android:textSize="@dimen/dip_lable_text_size"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <EditText
+                android:id="@+id/billNo"
+                android:layout_width="@dimen/bill_view_width"
+                android:layout_height="@dimen/dip_view_height"
+                android:background="@color/color_default_app_bg"
+                android:ems="10"
+                android:hint="123456"
+                android:inputType="number"
+                android:maxLength="6"
+                android:paddingLeft="5dp"
+                android:textColor="@color/input_color"
+                android:textSize="@dimen/dip_edit_text_size"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_input_bg1"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/lableVehicleNo"
+                android:layout_width="@dimen/bill_lable_width"
+                android:layout_height="@dimen/dip_lable_height"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="Vehicle No"
+                android:textColor="@color/color_primary_text"
+                android:textSize="@dimen/dip_lable_text_size"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <EditText
+                android:id="@+id/vehicleNo"
+                android:layout_width="@dimen/bill_view_width"
+                android:layout_height="@dimen/dip_view_height"
+                android:background="@color/color_default_app_bg"
+                android:ems="10"
+                android:hint="AP 27 MP 1234"
+                android:inputType="textCapCharacters"
+                android:maxLength="13"
+                android:paddingLeft="5dp"
+                android:textColor="@color/input_color"
+                android:textSize="@dimen/dip_edit_text_size"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_input_bg1"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/lablePrice"
+                android:layout_width="@dimen/bill_lable_width"
+                android:layout_height="@dimen/dip_lable_height"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="Price       \u20b9"
+                android:textColor="@color/color_primary_text"
+                android:textSize="@dimen/dip_lable_text_size"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <EditText
+                android:id="@+id/price"
+                android:layout_width="@dimen/bill_view_width"
+                android:layout_height="@dimen/dip_view_height"
+                android:background="@color/color_default_app_bg"
+                android:ems="10"
+                android:hint="0 to 99.99"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:paddingLeft="5dp"
+                android:textColor="@color/input_color"
+                android:textSize="@dimen/dip_edit_text_size"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_input_bg1"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/lableAmount"
+                android:layout_width="@dimen/bill_lable_width"
+                android:layout_height="@dimen/dip_lable_height"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="Amount  \u20B9"
+                android:textColor="@color/color_primary_text"
+                android:textSize="@dimen/dip_lable_text_size"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="@dimen/bill_view_width"
+                android:layout_height="@dimen/dip_view_height"
+                android:background="@color/color_default_app_bg"
+                android:ems="10"
+                android:hint="0 to 999999.99"
+                android:inputType="numberDecimal"
+                android:maxLength="9"
+                android:paddingLeft="5dp"
+                android:textColor="@color/input_color"
+                android:textSize="@dimen/dip_edit_text_size"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_input_bg1"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/lableLitres"
+                android:layout_width="@dimen/bill_lable_width"
+                android:layout_height="@dimen/dip_lable_height"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="Litres"
+                android:textColor="@color/color_primary_text"
+                android:textSize="@dimen/dip_lable_text_size"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <TextView
+                android:id="@+id/litres"
+                android:layout_width="@dimen/bill_view_width"
+                android:layout_height="@dimen/dip_view_height"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:background="@color/color_default_app_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text=""
+                android:textColor="@color/dip_result_text"
+                android:textSize="@dimen/dip_view_text_size"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteY="16dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"></LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

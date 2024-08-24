@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_default_app_bg">#018786</color>
+    <color name="color_default_appbar_bg">#027473</color>
+
+    <color name="color_primary_text">#aaffffff</color>
+    <color name="color_bill_text">#420361</color>
+
+    <color name="color_input_bg1">#01706e</color>
+    <color name="color_input_bg2">#04aeac</color>
+    <color name="colorPrimary">#027473</color>
+    <color name="colorPrimaryDark">#014544</color>
+    <color name="colorAccent">#f70658</color>
+    <color name="Rs_2000">#a5028b</color>
+    <color name="bgEditText">#00000000</color>
+    <color name="background_light">#99ffffff</color>
+    <color name="dip_result_text">#ffc90e</color>
+
+    <color name="input_color">#420361</color>
+
+
+    <!-- Denom Tab Colors -->
+    <color name="denom_blank">#00121111</color>
+    <color name="denom_edittext">#420361</color>
+    <color name="denom_textview">#aaffffff</color>
+    <color name="color_denom_bg1">#01706e</color>
+    <color name="color_denom_bg2">#0b8b89</color>
+</resources>
+
+

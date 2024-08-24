@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_default_app_bg"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_input_bg1"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/errorText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTintMode="add"
+            android:gravity="top|left"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="#ffffff00"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/ScrollView01"
+        style="@android:style/Widget.DeviceDefault.ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:isScrollContainer="true"
+        android:scrollbarStyle="insideOverlay">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="431dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#4ab4b2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lableDenom"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:paddingLeft="2dp"
+                    android:text="Denom"
+                    android:textColor="@color/denom_textview"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lableQty"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:paddingLeft="2dp"
+                    android:text="No of Notes"
+                    android:textAllCaps="false"
+                    android:textColor="@color/denom_textview"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/lableValue"
+                    android:layout_width="@dimen/value_col_width"
+                    android:layout_height="35dp"
+
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center_horizontal"
+                    android:text="Value"
+                    android:textColor="@color/denom_textview"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/denom_blank"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/denom_blank" />
+
+            </LinearLayout>
+
+
+            <!-- row of 2000 -->
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color_denom_bg1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lable2000"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:paddingLeft="5dp"
+                    android:text="2000"
+                    android:textColor="@color/denom_textview"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/qty2000"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@color/color_default_app_bg"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:paddingLeft="2dp"
+                    android:textColor="@color/denom_edittext"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/result2000"
+                    android:layout_width="@dimen/value_col_width"
+                    android:layout_height="35dp"
+
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/denom_textview"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/denom_blank"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/denom_blank" />
+
+            </LinearLayout>
+
+            <!-- row of 500 -->
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color_denom_bg2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lable500"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:paddingLeft="5dp"
+                    android:text="500"
+                    android:textColor="@color/denom_textview"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/qty500"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="#00000000"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:paddingLeft="2dp"
+                    android:textColor="@color/denom_edittext"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/result500"
+                    android:layout_width="@dimen/value_col_width"
+                    android:layout_height="35dp"
+
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/denom_textview"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/denom_blank"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/denom_blank" />
+
+            </LinearLayout>
+
+            <!-- row of 200 -->
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color_denom_bg1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lable200"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:paddingLeft="5dp"
+                    android:text="200"
+                    android:textColor="@color/denom_textview"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/qty200"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@color/color_default_app_bg"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:paddingLeft="2dp"
+                    android:textColor="@color/denom_edittext"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/result200"
+                    android:layout_width="@dimen/value_col_width"
+
+                    android:layout_height="35dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/denom_textview"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/denom_blank"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/denom_blank" />
+
+            </LinearLayout>
+
+            <!-- row of 100 -->
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color_denom_bg2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lable100"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:paddingLeft="5dp"
+                    android:text="100"
+                    android:textColor="@color/denom_textview"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/qty100"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="#00000000"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:paddingLeft="2dp"
+                    android:textColor="@color/denom_edittext"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/result100"
+                    android:layout_width="@dimen/value_col_width"
+                    android:layout_height="35dp"
+
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/denom_textview"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/denom_blank"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/denom_blank" />
+
+            </LinearLayout>
+
+            <!-- row of 50 -->
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color_denom_bg1"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/lable50"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:paddingLeft="5dp"
+                    android:text="50"
+                    android:textColor="@color/denom_textview"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <EditText
+
+                    android:id="@+id/qty50"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@color/color_default_app_bg"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:paddingLeft="2dp"
+                    android:textColor="@color/denom_edittext"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/result50"
+                    android:layout_width="@dimen/value_col_width"
+                    android:layout_height="35dp"
+
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/denom_textview"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/denom_blank"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/denom_blank" />
+
+            </LinearLayout>
+
+            <!-- row of 20 -->
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color_denom_bg2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lable20"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:paddingLeft="5dp"
+                    android:text="20"
+                    android:textColor="@color/denom_textview"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/qty20"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="#00000000"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:paddingLeft="2dp"
+                    android:textColor="@color/denom_edittext"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/result20"
+                    android:layout_width="@dimen/value_col_width"
+                    android:layout_height="35dp"
+
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/denom_textview"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/denom_blank"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/denom_blank" />
+
+            </LinearLayout>
+
+            <!-- row of 10-->
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color_denom_bg1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lable10"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:paddingLeft="5dp"
+                    android:text="10"
+                    android:textColor="@color/denom_textview"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/qty10"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@color/color_default_app_bg"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:paddingLeft="2dp"
+                    android:textColor="@color/denom_edittext"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/result10"
+                    android:layout_width="@dimen/value_col_width"
+                    android:layout_height="35dp"
+
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/denom_textview"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/denom_blank"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/denom_blank" />
+
+            </LinearLayout>
+
+            <!-- row of 5 -->
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color_denom_bg2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lable5"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:paddingLeft="5dp"
+                    android:text="5"
+                    android:textColor="@color/denom_textview"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/qty5"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="#00000000"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:paddingLeft="2dp"
+                    android:textColor="@color/denom_edittext"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/result5"
+                    android:layout_width="@dimen/value_col_width"
+                    android:layout_height="35dp"
+
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/denom_textview"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/denom_blank"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/denom_blank" />
+
+            </LinearLayout>
+
+            <!-- row of 2 -->
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color_denom_bg1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lable2"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:paddingLeft="5dp"
+                    android:text="2"
+                    android:textColor="@color/denom_textview"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/qty2"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@color/color_default_app_bg"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:paddingLeft="2dp"
+                    android:textColor="@color/denom_edittext"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/result2"
+                    android:layout_width="@dimen/value_col_width"
+                    android:layout_height="35dp"
+
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/denom_textview"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/denom_blank"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/denom_blank" />
+
+            </LinearLayout>
+
+            <!-- row of 1 -->
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color_denom_bg2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lable1"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:paddingLeft="5dp"
+                    android:text="1"
+                    android:textColor="@color/denom_textview"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/qty1"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="#00000000"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:paddingLeft="2dp"
+                    android:textColor="@color/denom_edittext"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/result1"
+                    android:layout_width="@dimen/value_col_width"
+                    android:layout_height="35dp"
+
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/denom_textview"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/denom_blank"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/denom_blank" />
+
+            </LinearLayout>
+
+            <!-- row of total -->
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#4ab4b2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lableTotal"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/colorPrimaryDark"
+                    android:paddingLeft="5dp"
+                    android:text="Total"
+                    android:textColor="@color/denom_textview"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/qtyTotal"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:inputType="number"
+                    android:paddingLeft="2dp"
+                    android:textColor="@color/denom_textview"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/resultTotal"
+                    android:layout_width="@dimen/value_col_width"
+                    android:layout_height="35dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/colorPrimaryDark"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/denom_textview"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginBottom="20dp">
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

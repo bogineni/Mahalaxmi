@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/clear_one"
+        android:orderInCategory="1"
+        android:title=""
+        android:visible="true"
+        android:tooltipText="Clear"
+        android:icon="@android:drawable/ic_menu_revert"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/share"
+        android:orderInCategory="2"
+        android:title=""
+        android:visible="true"
+        android:tooltipText="Send to Whatsapp"
+        android:icon="@android:drawable/ic_menu_share"
+        app:showAsAction="always|withText" />
+
+
+</menu>
