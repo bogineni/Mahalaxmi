@@ -4,8 +4,8 @@
     <string name="section_format">Hello World from section: %1$d</string>
 
 
-    <string name="prop">Proprietor: Ravuri Manimala</string>
-    <string name="add">Mahalaxmi Petroleums is a\nRetail Outlet of Nayara Energy Ltd \nChiantalapalem, SH-65, Cumbum-B.Pet </string>
+    <string name="prop">Proprietor: </string>
+    <string name="add">Mahalaxmi Petroleums </string>
     <string name="dev">App Dev: Bogineni Siva Prasad \nwww.about.me/bogineni </string>
 
 
